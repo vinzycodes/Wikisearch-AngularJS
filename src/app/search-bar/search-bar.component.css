@@ -1,0 +1,7 @@
+.search-wrapper{
+  margin:2em;
+}
+.search-field{
+  width:calc(100vw - 4em);
+  max-width: 100%;
+}

@@ -1,0 +1,15 @@
+<!-- *ngFor="let page of pages" -->
+
+<mat-card class="card-wrapper" *ngFor="let page of pages">
+  <mat-card-header>
+    <mat-card-subtitle>{{ page.timestamp }}</mat-card-subtitle>
+    <mat-card-title>{{ page.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p [innerHTML]="page.snippet"></p>
+    <mat-divider></mat-divider>
+  </mat-card-content>
+  <mat-card-actions align="end" class="button-wrapper">
+    <a mat-raised-button color="primary" target="_blank" [href]="'https://en.wikipedia.org/?curid=' + page.pageid">Visit</a>
+  </mat-card-actions>
+</mat-card>

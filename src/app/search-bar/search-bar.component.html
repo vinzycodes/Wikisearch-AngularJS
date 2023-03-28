@@ -1,0 +1,9 @@
+<div class="search-wrapper">
+  <h1 class="app-title">Wikisearch</h1>
+  <form (submit)="onFormSubmit($event)">
+      <mat-form-field class="search-field" appearance="outline">
+        <input matInput type="text" placeholder="Put something..." (input)="term = getValue($event)">
+      </mat-form-field>
+  </form>
+</div>
+
